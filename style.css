@@ -5,7 +5,8 @@ body {
     background-color: #414142;
 }
 h1 {text-align:center;
-color:brown; }
+color:brown; 
+font-size: 40px;}
 
 
 .mems{
@@ -16,12 +17,12 @@ color:brown; }
 .mem {
     margin-bottom: 2px;
     border: 1.5px solid black;
+    background-color:gray;
 }
 
 .mem-label{
     padding: 15px 15px;
-    position: relative;
-    text-align:center;
+       text-align:center;
     color: white;
     cursor: pointer;
     display: block;
@@ -29,20 +30,19 @@ color:brown; }
 
 .mem-label:hover {
     background-color: black;
-}
+    background-color: black;
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+   }
 
 .mem-inp {
     width: 0;
     height: 0;
     appearance: none;
-    position: absolute;
+    display: none;
 }
 
-.mem-inp:checked ~ .mem-label {
-    background-color:black;
-}
-
-.mem-inp:checked ~ .picture {
+.mem-inp:checked:active ~.picture {
     display: block;
 }
 
@@ -57,10 +57,12 @@ img {
     margin: 20px auto;
 }
 
+.mem-inp:hover~ .mem-label {
+    background-color:black;
+  }
 
-
-
-
-
+.mem-inp:hover ~ .picture {
+    display: block;
+}
 
 
