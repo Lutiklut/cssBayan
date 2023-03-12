@@ -22,7 +22,7 @@ font-size: 40px;}
 
 .mem-label{
     padding: 15px 15px;
-       text-align:center;
+    text-align:center;
     color: white;
     cursor: pointer;
     display: block;
@@ -42,7 +42,7 @@ font-size: 40px;}
     display: none;
 }
 
-.mem-inp:checked:active ~.picture {
+.mem-inp:checked ~.picture {
     display: block;
 }
 
@@ -65,4 +65,22 @@ img {
     display: block;
 }
 
+
+.close{
+    display: none;
+}
+.mem-inp:checked ~.mem-label[name=mem-inp]{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-size: cover;
+    float: right;
+}
+.mem-inp:checked ~.mem-label .close {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-size: cover;
+    float: right;
+}
 
