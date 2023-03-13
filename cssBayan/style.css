@@ -87,7 +87,7 @@ body:hover .mem-inp ~.mem-label .close{
 
 @media screen and (max-width: 480px) {
     h1{
-        font-size: 10;}
+        font-size: 20px;}
     body {
           font-size: 10px;}
      .mems:hover .mem-inp ~.mem-label .close{
@@ -99,7 +99,7 @@ body:hover .mem-inp ~.mem-label .close{
            height: 0.5rem;
             }
     .mems{
-            max-width: 100vw;
+            max-width: 80vw;
             margin: 10px auto;
             
                 }
@@ -107,7 +107,7 @@ body:hover .mem-inp ~.mem-label .close{
 
 @media (min-width: 481px) and (max-width: 840px) {
     h1{
-        font-size: 20;}
+        font-size: 25px;}
     body {
           font-size: 16px;}
      .mems:hover .mem-inp ~.mem-label .close{
@@ -119,7 +119,7 @@ body:hover .mem-inp ~.mem-label .close{
            height: 1rem;
             }
    .mems{
-            max-width: 100vw;
+            max-width: 80vw;
             margin: 15px auto;
                 
                     }
@@ -127,7 +127,7 @@ body:hover .mem-inp ~.mem-label .close{
 
 @media (min-width: 840px) and (max-width: 1024px) {
         h1{
-            font-size: 35;}
+            font-size: 35px;}
         body {
               font-size: 18px;}
         .mems:hover .mem-inp ~.mem-label .close{
@@ -139,7 +139,7 @@ body:hover .mem-inp ~.mem-label .close{
                 height: 1.5rem;
                  }
         .mems{
-             max-width: 100vw;
+             max-width: 80vw;
              margin: 15px auto;
                      
                    }
