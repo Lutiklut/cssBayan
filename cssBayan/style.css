@@ -21,7 +21,7 @@ font-size: 40px;}
 }
 
 .mem-label, .picture{
-    padding: 15px 15px;
+    padding: 10px 10px;
     text-align:center;
     color: white;
     cursor: pointer;
@@ -72,15 +72,15 @@ body:hover .mem-inp ~.mem-label .close{
 
 .mems:hover .mem-inp ~.mem-label .close{
     display: block;
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     float: right;
     transform: rotate(90deg);
 }
 .mems:hover .mem-inp:checked ~.mem-label .close{
     display: block;
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     float: right;
     transform: rotate(45deg);
      }
@@ -89,7 +89,15 @@ body:hover .mem-inp ~.mem-label .close{
     h1{
         font-size: 20;}
     body {
-          font-size: 14px;}
+          font-size: 10px;}
+     .mems:hover .mem-inp ~.mem-label .close{
+            width: 0.5rem;
+           height: 0.5rem;
+       }
+   .mems:hover .mem-inp:checked ~.mem-label .close{
+           width: 0.5rem;
+           height: 0.5rem;
+            }
     }
 
 @media (max-width: 481px)and(max-width: 840px) {
@@ -97,6 +105,14 @@ body:hover .mem-inp ~.mem-label .close{
         font-size: 30;}
     body {
           font-size: 16px;}
+     .mems:hover .mem-inp ~.mem-label .close{
+            width: 1rem;
+           height: 1rem;
+       }
+   .mems:hover .mem-inp:checked ~.mem-label .close{
+           width: 1rem;
+           height: 1rem;
+            }
     }
 
 @media (max-width: 840px)and(max-width: 1024px) {
@@ -104,4 +120,12 @@ body:hover .mem-inp ~.mem-label .close{
             font-size: 40;}
         body {
               font-size: 18px;}
+        .mems:hover .mem-inp ~.mem-label .close{
+                 width: 1.5rem;
+                height: 1.5rem;
+            }
+        .mems:hover .mem-inp:checked ~.mem-label .close{
+                width: 1.5rem;
+                height: 1.5rem;
+                 }
         }
