@@ -1,6 +1,5 @@
 body {
-    line-height: 2;
-    font-size: 18px;
+      font-size: 18px;
     font-family: Verdana, sans-serif;
     background-color: #414142;
 }
@@ -9,14 +8,16 @@ color:brown;
 font-size: 40px;}
 
 .mems{
-    max-width: 25%;
+    max-width: 20vw;
     margin: 20px auto;
-}
+
+    }
 
 .mem {
     margin-bottom: 2px;
     border: 1.5px solid black;
     background-color:gray;
+    
 }
 
 .mem-label, .picture{
@@ -29,9 +30,8 @@ font-size: 40px;}
 
 .mem-label:hover {
     background-color: black;
-    transition: height 0.5s ease-in-out;
-    transition: height 0.01s ease-in-out ;
-   }
+    transition: 1s;
+       }
 
 .mem-inp {
     display: none;
@@ -55,7 +55,7 @@ img {
 
 .mem-inp:hover ~ .picture {
     display: block;
-}
+ }
 
 .close{
     display: none;
@@ -85,15 +85,23 @@ body:hover .mem-inp ~.mem-label .close{
     transform: rotate(45deg);
      }
 
-   
-/* 
-не рабочий вариант
-.close:active >.mem-label~.mem-inp{
- 
-    display: none;
+@media (max-width: 480px) {
+    h1{
+        font-size: 20;}
+    body {
+          font-size: 14px;}
+    }
 
-}
+@media (max-width: 481px)and(max-width: 840px) {
+    h1{
+        font-size: 30;}
+    body {
+          font-size: 16px;}
+    }
 
-@media screen and (max-width:468px) {
-      h1{font-size: 20;}
- }
+@media (max-width: 840px)and(max-width: 1024px) {
+        h1{
+            font-size: 40;}
+        body {
+              font-size: 18px;}
+        }
