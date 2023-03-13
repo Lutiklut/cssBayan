@@ -34,9 +34,6 @@ font-size: 40px;}
    }
 
 .mem-inp {
-    width: 0;
-    height: 0;
-    appearance: none;
     display: none;
 }
 
@@ -55,47 +52,40 @@ img {
     margin: 20px auto;
 }
 
-.mem-inp:hover~ .mem-label {
-    background-color:black;
-  }
 
 .mem-inp:hover ~ .picture {
     display: block;
 }
-.mem-inp:hover ~ .mem-label .close {
-    display: block;
-    width: 2rem;
-    height: 2rem;
-    background-size: cover;
-    float: right;
-    transform: rotate(45deg);
-}
-
 
 .close{
     display: none;
 }
 .mem-inp:checked ~.mem-label[name=mem-inp]{
     display: block;
-    width: 2rem;
-    height: 2rem;
-    background-size: cover;
-    float: right;
-    
-}
+    }
 .mem-inp:checked ~.mem-label{
     background-color:black;
     
 }
-.mem-inp:checked ~.mem-label .close {
+body:hover .mem-inp ~.mem-label .close{
+    display: none;}
+
+.mems:hover .mem-inp ~.mem-label .close{
     display: block;
     width: 2rem;
     height: 2rem;
-    background-size: cover;
     float: right;
-    
+    transform: rotate(90deg);
 }
+.mems:hover .mem-inp:checked ~.mem-label .close{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    float: right;
+    transform: rotate(45deg);
+     }
 
+   
 /* 
 не рабочий вариант
 .close:active >.mem-label~.mem-inp{
